@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>HowMany.ie: The website for travel lovers.</title>
+</head>
+<body>
+    
+
+    <div id="container">
+        <header class="myHeader">
+            <h1>HowMany.ie</h1>
+            <p id="tagline">Home</p>
+            <button id="logIn" type="button">Log In</button>
+            <button id="signUp" type="button">Sign Up</button>
+        </header>
+        <main>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="item" href="index.html">Home</a></li>
+                    <li><a class="item" href="logger.html">Travel logger</a></li>
+                    <li><a class="item" href="about.html">About us</a></li>
+                </ul>
+            </nav>
+        </main>
+    <div class="flex-container">
+        <p class="boxes">Welcome to our page!</p>
+        <p class="boxes">Our page was created to give everyone a nice and easy way to log your travels and keep track of your journey around the world!!</p>
+        <p class="boxes">On our page you will find called "Travel Logger" you will be able to enter, delete and search the countries you have travelled to, our page will also greet you with a counter after the first country has been entered leting you know how many places you have visited. When you enter the country you have visited you are now allowed to search (non case sensitive) for the country you have entered and it will display on the top of the page the details of your travels.</p>
+        <p class="boxes">When you then visit our "about us" page you will be greeted with a page talking about this project, my work and progress making it, how I took the necessary steps in order to complete the code and </p>
+    </div>
+    <div class="my-container">
+    <form id="sign-up">
+        <div class="my-container">
+            <h1 style="color: 2px solid black; size: 10px;">Sign Up</h1>
+            <p>Please fill in this form to create your new account</p>
+        </div>
+        <div class="myFormRow">
+            <label for="Email">Email</label>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+        <div class="myFormRow">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+
+        <div class="myFormRow">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <button id="submitSU" type="submit">Submit</button>
+        <button class="reset" type="reset">Reset</button>
+        
+    </form>
+
+
+
+    <div class="my-container">
+        <form id="sign-in">
+            <div class="my-container">
+                <h1>Sign In</h1>
+                <p>Please fill in this form to sign in.</p>
+            </div>
+            <div class="myFormRow">
+                <label for="username">Username or </label>
+                <label for="email">Email</label>
+                <input type="text" name="nameEmail" id="nameEmail" required>
+            </div>
+            <div class="myFormRow">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button id="submitSI" type="submit">Submit</button>
+            <button class="reset" type="reset">Reset</button>
+        </form>
+    </div>
+    
+    <p id="siComplete" style="display:none; font-size: 30px; color: blue; background-color: green;">Sign In Complete !!</p>
+    <p id="suComplete" style="display: none; font-size: 30px; color: blue; background-color: green;">Sign Up Complete !!</p>
+    </div>
+
+    <div>
+        <img class ="img-plane"src="images/AerLingus.png" width="400" height="400" alt="AerLingus">
+        <img class ="img-plane"src="images/RyanAir.png" width="400" height="400" alt="RyanAir">
+    </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

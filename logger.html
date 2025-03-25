@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>HowMany.ie: The website for travel lovers.</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <header class="myHeader">
+            <h1>HowMany.ie</h1>
+            <p id="tagline">Travel Logger</p>
+        </header>
+        <main>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="item" href="index.html">Home</a></li>
+                    <li><a class="item" href="logger.html">Travel logger</a></li>
+                    <li><a class="item" href="about.html">About us</a></li>
+                </ul>
+            </nav>
+
+            <div class="myTable">
+                <table>
+                    <tr>
+                        <th>Country Visited</th>
+                        <th>Visit Date</th>
+                        <th>Country Rating</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="FullForm">
+                <form>
+                    <div class="myFormRow">
+                        <label for="country">Country Visited</label>
+                        <input type="text" name="country" id="country" required>
+                    </div>
+
+                    <div class="myFormRow">
+                        <label for="dateVisited">Date Visited</label>
+                        <input type="date" name="dateVisited" id="dateVisited" required>
+                    </div>
+
+                    <div class="myFormRow">
+                        <label for="rating">Country Rating</label>
+                        <input type="number" name="Rating" id="rating" required>
+                    </div>
+
+                    <button class="submit-su" type="submit">Submit</button>
+                    <button class="reset" type="reset">Reset</button>
+                </form>
+
+                <input type="text" id="search">
+                <button onclick="search()">Search</button>
+                <p id="error">Country cant be found.</p>
+
+                <p id="countryCount"></p>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
